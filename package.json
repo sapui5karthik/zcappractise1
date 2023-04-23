@@ -1,0 +1,35 @@
+{
+  "name": "zcappractise1",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.3",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-zcappractiseapril23": "cds watch --open zcappractiseapril23/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zfioricustompageapp": "cds watch --open zfioricustompageapp/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "emp"
+        }
+      }
+    }
+  },
+  "sapux": [
+    "app/zcappractiseapril23",
+    "app/zfioricustompageapp"
+  ]
+}
